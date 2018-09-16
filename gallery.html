@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/hover.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
     <title>Bootstrap Sample</title>
@@ -12,10 +13,17 @@
         .gallarybgimg{
             width: 100vw;
             filter:contrast(0.5);
+            z-index:10;
         }
+        .galimg:hover {
+    outline: #333 solid 4px;
+}
         .row,.col-sm{
             width: 100%;
-            padding: 5px;
+            padding-top: 0px;
+            padding-bottom:0px;
+            margin-top:10Px;
+           min-width:350px;
         }
         
         .gallarytext{
@@ -25,11 +33,11 @@
             bottom:150px;
             font-size:40px;
             font-family: 'Merienda', cursive;
-            color:pink;
+            color:white;
         }
     </style>
 </head>
-.
+
 <body>
 
     <!-- Navbar
@@ -53,20 +61,16 @@
             </ul>
         </div>
     </nav>
-    <!-- Your content here -->
-    <div class="container">
-        <div class="row">
-            <div class="col bgcol">
-                <img class="gallarybgimg" src="media/images/BG1.jpg" alt="wedding" align="middle" width="1300px">
+    <div>
+                <img class="gallarybgimg" src="media/images/BG1.jpg" alt="wedding">
                 <p class="gallarytext">View our image gallery</p>
-                </div>
-        </div>
+                
     </div>
     <div class="container">
-        <div class="row" >
+        <div class="row " >
             <div class="col-sm-6">
-                <img src="media/images/FM13.jpeg" alt="wedding"></div>
-               <div class="col-sm-6"> <img src="media/images/FM14.jpeg" alt="wedding">
+                <img class="galimg hvr-glow" src="media/images/FM22.jpeg" alt="wedding"></div>
+               <div class="col-sm-6 "> <img  class="galimg" src="media/images/FM23.jpeg" alt="wedding">
                
             </div>
         </div>
@@ -74,8 +78,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="media/images/FM15.jpeg" alt="wedding"></div>
-            <div class="col-sm-6">    <img src="media/images/FM16.jpeg" alt="wedding">
+                <img class="galimg" src="media/images/FM15.jpeg" alt="wedding"></div>
+            <div class="col-sm-6">    <img class="galimg" src="media/images/FM16.jpeg" alt="wedding">
                 
             </div>
         </div>
@@ -83,16 +87,16 @@
     <div class="container">
         <div class="row">
             
-              <div class="col-sm-6">  <img src="media/images/FM12.jpeg" alt="wedding"></div>
-                <div class="col-sm-6">  <img src="media/images/FM19.jpeg" alt="wedding">
+              <div class="col-sm-6">  <img class="galimg" src="media/images/FM12.jpeg" alt="wedding"></div>
+                <div class="col-sm-6">  <img class="galimg" src="media/images/FM19.jpeg" alt="wedding">
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="media/images/FM10.jpeg" alt="wedding"></div>
-              <div class="col-sm-6">  <img src="media/images/FM11.jpeg" alt="wedding">
+                <img  class="galimg" src="media/images/FM10.jpeg" alt="wedding"></div>
+              <div class="col-sm-6">  <img class="galimg" src="media/images/FM11.jpeg" alt="wedding">
                 
             </div>
         </div>
@@ -100,8 +104,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="media/images/FM8.jpeg" alt="wedding"></div>
-                <div class="col-sm-6"><img src="media/images/FM7.jpeg" alt="wedding">
+                <img class="galimg" src="media/images/FM8.jpeg" alt="wedding"></div>
+                <div class="col-sm-6"><img class="galimg" src="media/images/FM7.jpeg" alt="wedding">
                 
             </div>
         </div>
@@ -109,8 +113,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="media/images/FM6.jpeg" alt="wedding"></div>
-               <div class="col-sm-6"> <img src="media/images/FM5.jpeg" alt="wedding">
+                <img class="galimg" src="media/images/FM6.jpeg" alt="wedding"></div>
+               <div class="col-sm-6"> <img class="galimg" src="media/images/FM5.jpeg" alt="wedding">
                 
             </div>
         </div>
@@ -118,8 +122,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="media/images/FM4.jpeg" alt="wedding" ></div>
-             <div class="col-sm-6">   <img src="media/images/FM3.jpeg" alt="wedding" >
+                <img class="galimg" src="media/images/FM4.jpeg" alt="wedding" ></div>
+             <div class="col-sm-6">   <img class="galimg" src="media/images/FM3.jpeg" alt="wedding" >
                 
             </div>
         </div>
@@ -127,9 +131,36 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="media/images/FM2.jpeg" alt="wedding"></div>
-               <div class="col-sm-6"> <img src="media/images/FM1.jpeg" alt="wedding">
+                <img class="galimg" src="media/images/FM2.jpeg" alt="wedding"></div>
+               <div class="col-sm-6"> <img class="galimg" src="media/images/FM1.jpeg" alt="wedding">
                 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="galimg" src="media/images/FM20.jpeg" alt="wedding"></div>
+              <div class="col-sm-6">  <img class="galimg" src="media/images/FM21.jpeg" alt="wedding">
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" >
+            <div class="col-sm-6">
+                <img class="galimg" src="media/images/FM24.jpeg" alt="wedding"></div>
+               <div class="col-sm-6"> <img class="galimg" src="media/images/FM25.jpeg" alt="wedding">
+               
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" >
+            <div class="col-sm-6">
+                <img class="galimg" src="media/images/FM13.jpeg" alt="wedding"></div>
+               <div class="col-sm-6"> <img class="galimg" src="media/images/FM14.jpeg" alt="wedding">
+               
             </div>
         </div>
     </div>
